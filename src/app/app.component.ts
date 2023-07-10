@@ -8,13 +8,15 @@ import { ActivatedRoute, Router } from "@angular/router";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  name = "Angular " + VERSION.major;
+  content: string = 'Hello Angular';
 
   constructor(
     private readonly route: ActivatedRoute,
     private readonly router: Router, 
     private readonly location: Location
   ) {}
+
+
 
   changeParam(value: string): void {
     // this.router.navigate([], { queryParams: { param: value } });
