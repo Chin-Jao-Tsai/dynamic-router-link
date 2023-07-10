@@ -8,7 +8,8 @@ import { ActivatedRoute, Router } from "@angular/router";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-
+  inputVal;
+  
   constructor(
     private readonly route: ActivatedRoute,
     private readonly router: Router, 

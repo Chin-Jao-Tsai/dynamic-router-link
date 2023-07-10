@@ -9,6 +9,7 @@ import { SubPageModule } from "./sub-page/sub-page.module";
 import { RootPageModule } from "./root-page/root-page.module";
 import { RootPageComponent } from "./root-page/root-page.component";
 import { BlockCopyPasteDirective } from "./directive/disableCopyPaste";
+import { FormsModule } from "@angular/forms";
 
 const routes: Route[] = [
   { path: "", component: RootPageComponent },
@@ -18,6 +19,7 @@ const routes: Route[] = [
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(routes),
     RootPageModule,
     SubPageModule
