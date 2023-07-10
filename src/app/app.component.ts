@@ -9,7 +9,7 @@ import { GreetingService } from "./service/greeting.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  inputVal;
+  bgColor = '';
   
   constructor(
     private readonly route: ActivatedRoute,
@@ -27,5 +27,13 @@ export class AppComponent {
 
   childComEmit(event: any){
     alert(event);
+  }
+
+  mouseEnter(event: any){
+    if(event){
+      this.bgColor = "blue";
+    } else {
+      this.bgColor = "";
+    }
   }
 }
