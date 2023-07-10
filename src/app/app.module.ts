@@ -10,6 +10,7 @@ import { RootPageModule } from "./root-page/root-page.module";
 import { RootPageComponent } from "./root-page/root-page.component";
 import { FormsModule } from "@angular/forms";
 import { BlockCopyPasteDirective } from "./directive/disableCopyPaste.directive";
+import { HighlightDirective } from "./directive/highlight.directive";
 
 const routes: Route[] = [
   { path: "", component: RootPageComponent },
@@ -27,7 +28,8 @@ const routes: Route[] = [
   declarations: [
     AppComponent, 
     HelloComponent,
-    BlockCopyPasteDirective
+    BlockCopyPasteDirective,
+    HighlightDirective
   ],
   bootstrap: [AppComponent]
 })
