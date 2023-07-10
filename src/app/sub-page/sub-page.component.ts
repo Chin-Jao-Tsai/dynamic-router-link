@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common'
 
 @Component({
   selector: 'app-sub-page',
@@ -8,9 +9,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SubPageComponent implements OnInit {
 
-  constructor(private readonly route: ActivatedRoute) { }
+  constructor(private readonly route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
+  }
+
+  back(){
+    this.location.back();
   }
 
 }

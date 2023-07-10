@@ -1,3 +1,4 @@
+import { Location } from "@angular/common";
 import { Component, VERSION } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
 
@@ -11,10 +12,12 @@ export class AppComponent {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly router: Router
+    private readonly router: Router, 
+    private readonly location: Location
   ) {}
 
   changeParam(value: string): void {
-    this.router.navigate([], { queryParams: { param: value } });
+    // this.router.navigate([], { queryParams: { param: value } });
+    this.location.back();
   }
 }
