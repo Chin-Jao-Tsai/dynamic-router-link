@@ -7,8 +7,7 @@ import { ActivatedRoute, Router } from "@angular/router";
   templateUrl: "./app.component.html",
   styleUrls: ["./app.component.css"]
 })
-export class AppComponent {
-  content: string = 'Hello Angular';
+export class AppComponent {  
 
   constructor(
     private readonly route: ActivatedRoute,
