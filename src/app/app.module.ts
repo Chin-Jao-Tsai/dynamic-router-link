@@ -8,6 +8,7 @@ import { SubPageComponent } from "./sub-page/sub-page.component";
 import { SubPageModule } from "./sub-page/sub-page.module";
 import { RootPageModule } from "./root-page/root-page.module";
 import { RootPageComponent } from "./root-page/root-page.component";
+import { BlockCopyPasteDirective } from "./directive/disableCopyPaste";
 
 const routes: Route[] = [
   { path: "", component: RootPageComponent },
@@ -21,7 +22,11 @@ const routes: Route[] = [
     RootPageModule,
     SubPageModule
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [
+    AppComponent, 
+    HelloComponent,
+    BlockCopyPasteDirective
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
