@@ -8,8 +8,8 @@ import { SubPageComponent } from "./sub-page/sub-page.component";
 import { SubPageModule } from "./sub-page/sub-page.module";
 import { RootPageModule } from "./root-page/root-page.module";
 import { RootPageComponent } from "./root-page/root-page.component";
-import { BlockCopyPasteDirective } from "./directive/disableCopyPaste";
 import { FormsModule } from "@angular/forms";
+import { BlockCopyPasteDirective } from "./directive/disableCopyPaste.directive";
 
 const routes: Route[] = [
   { path: "", component: RootPageComponent },
