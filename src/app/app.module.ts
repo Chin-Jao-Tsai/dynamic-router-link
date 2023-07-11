@@ -19,7 +19,7 @@ const routes: Route[] = [
   // { path: "sub-page", component: SubPageComponent,
   //   children: [
   //     {
-  //       path: 'root-page',
+  //       path: 'hello-page',
   //       component: HelloComponent
   //     }
   //   ]

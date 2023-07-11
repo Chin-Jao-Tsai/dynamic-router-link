@@ -28,6 +28,10 @@ export class SubPageComponent implements OnInit {
   }
 
   goHelloPageinSubPage(){
-    this.router.navigate(['/sub-page/root-page']);
+    // this.router.navigate(['/sub-page/hello-page']);
+    // or
+    // this.router.navigate(['hello-page'], {
+    //   relativeTo: this.route
+    // });
   }
 }
