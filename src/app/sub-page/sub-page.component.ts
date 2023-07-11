@@ -25,7 +25,7 @@ export class SubPageComponent implements OnInit {
     this.router.navigate(['']);
   }
 
-  goRootPageinSubPage(){
+  goHelloPageinSubPage(){
     this.router.navigate(['/sub-page/root-page']);
   }
 }
