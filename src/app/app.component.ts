@@ -29,4 +29,12 @@ export class AppComponent {
       this.bgColor = "";
     }
   }
+
+  onActivate(event: any){
+    // console.log(Object.keys(event));
+  }
+
+  onDeactivate(event: any){
+    // console.log("D", Object.keys(event));
+  }
 }
