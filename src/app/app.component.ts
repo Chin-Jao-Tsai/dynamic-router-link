@@ -18,13 +18,6 @@ export class AppComponent {
     public gs: GreetingService
   ) {}
 
-
-
-  changeParam(value: string): void {
-    // this.router.navigate([], { queryParams: { param: value } });
-    // this.location.back();
-  }
-
   childComEmit(event: any){
     alert(event);
   }

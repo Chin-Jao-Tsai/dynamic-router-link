@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Location } from '@angular/common'
 
 @Component({
@@ -9,13 +9,23 @@ import { Location } from '@angular/common'
 })
 export class SubPageComponent implements OnInit {
 
-  constructor(private readonly route: ActivatedRoute, private location: Location) { }
+  constructor(private readonly route: ActivatedRoute, 
+              private router: Router,
+              private location: Location) {
+      
+      console.log(this.route.snapshot.queryParams);
+                
+  }
 
   ngOnInit() {
   }
 
   back(){
-    this.location.back();
+    // this.location.back();
+    this.router.navigate(['']);
   }
 
+  goRootPageinSubPage(){
+    this.router.navigate(['/sub-page/root-page']);
+  }
 }

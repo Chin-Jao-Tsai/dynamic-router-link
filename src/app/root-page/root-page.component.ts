@@ -16,4 +16,13 @@ export class RootPageComponent implements OnInit {
   gotoSubPage(){
     this.router.navigate(['/sub-page']);                            
   }
+
+  gotoSubPageWithParam(){
+    this.router.navigate(['/sub-page'], {
+      queryParams: {
+        data: "someId",
+        id: "123"
+      }
+    }); 
+  }
 }

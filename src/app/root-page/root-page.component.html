@@ -1,2 +1,7 @@
-<h2>Root Page</h2>
-<button (click)="gotoSubPage()">sub page</button>
+<div [style.background]="'lightgreen'">
+  <h2>this is Root Page</h2>
+  <button (click)="gotoSubPage()">go sub page</button>
+  <div>
+    <button (click)="gotoSubPageWithParam()">go sub page with params</button>
+  </div>
+</div>
