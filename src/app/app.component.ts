@@ -18,6 +18,10 @@ export class AppComponent {
     public gs: GreetingService
   ) {}
 
+  ngOnInit() {
+    console.log("AppComponent");
+  }
+
   childComEmit(event: any){
     alert(event);
   }
@@ -32,9 +36,11 @@ export class AppComponent {
 
   onActivate(event: any){
     // console.log(Object.keys(event));
+    // alert("onActive");
   }
 
   onDeactivate(event: any){
     // console.log("D", Object.keys(event));
+    // alert("onDeactivate");
   }
 }

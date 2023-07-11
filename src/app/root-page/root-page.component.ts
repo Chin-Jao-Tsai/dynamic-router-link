@@ -11,6 +11,7 @@ export class RootPageComponent implements OnInit {
   constructor(private readonly router: Router) { }
 
   ngOnInit() {
+    console.log("RootPageComponent");
   }
 
   gotoSubPage(){
