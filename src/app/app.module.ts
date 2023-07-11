@@ -15,15 +15,15 @@ import { HighlightDirective } from "./directive/highlight.directive";
 const routes: Route[] = [
   { path: "", component: RootPageComponent },
   { path: "roo-page", component: RootPageComponent },
-  // { path: "sub-page", component: SubPageComponent }
-  { path: "sub-page", component: SubPageComponent,
-    children: [
-      {
-        path: 'root-page',
-        component: HelloComponent
-      }
-    ]
-  }
+  { path: "sub-page", component: SubPageComponent }
+  // { path: "sub-page", component: SubPageComponent,
+  //   children: [
+  //     {
+  //       path: 'root-page',
+  //       component: HelloComponent
+  //     }
+  //   ]
+  // }
 ];
 
 @NgModule({
