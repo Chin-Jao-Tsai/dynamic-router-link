@@ -13,7 +13,8 @@ export class SubPageComponent implements OnInit {
               private router: Router,
               private location: Location) {
       
-      console.log(this.route.snapshot.queryParams);
+      if(this.route.snapshot.queryParams)
+        console.log(this.route.snapshot.queryParams);
                 
   }
 
