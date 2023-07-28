@@ -34,6 +34,9 @@ export class AppComponent {
     }
   }
 
+
+
+  // Router Lab
   onActivate(event: any){
     // console.log(Object.keys(event));
     // alert("onActive");

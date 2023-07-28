@@ -13,8 +13,13 @@ export class SubPageComponent implements OnInit {
               private router: Router,
               private location: Location) {
       
-      if(this.route.snapshot.queryParams)
-        console.log(this.route.snapshot.queryParams);
+      let data = this.route.snapshot.queryParamMap.get("data");
+      let id = this.route.snapshot.queryParamMap.get("id");
+
+      if(data && id) {
+        alert(data + " - " + id);
+      }
+        
                 
   }
 
@@ -28,7 +33,7 @@ export class SubPageComponent implements OnInit {
   }
 
   goHelloPageinSubPage(){
-    // this.router.navigate(['/sub-page/hello-page']);
+    this.router.navigate(['/sub-page/hello-page']);
     // or
     // this.router.navigate(['hello-page'], {
     //   relativeTo: this.route
